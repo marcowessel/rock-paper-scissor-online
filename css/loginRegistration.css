@@ -1,0 +1,70 @@
+#login-registration {
+    background-image: url("../image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-top-bottom) var(--spacing-left-right);
+    height: 100%;
+}
+
+#login-registration-container {
+    display: flex;
+    overflow: auto;
+    border-radius: 15px;
+    box-shadow: 0px 16px 45px -4px rgba(0, 0, 0, 0.34);
+    height: fit-content;
+}
+
+#login-registration-container input {
+    width: 250px;
+}
+
+#login-registration-container h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    padding: 15px 60px;
+    text-align: center;
+    border-bottom: 1px lightgray solid;
+    background: var(--top-bar-gradient);
+    color: white;
+    margin-bottom: 0px;
+}
+
+#registration-container form, #login-container form {
+    padding: 40px 60px;
+    padding-bottom: 60px;
+    overflow: auto;
+}
+
+#login-container h1 {
+    background-color: white;
+}
+
+#registration-container h1 {
+    background-color: white;
+}
+
+#login-container {
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 0px 32px -4px rgba(0, 0, 0, 0.4);
+}
+
+#registration-container {
+    background-color: white;
+}
+
+/*------------------------------------*\
+# BUTTON
+\*------------------------------------*/
+
+.btn, .btn-primary{
+    border-radius: 99px;
+    height: 50px;
+    font-weight: 900;
+    border-bottom: #025ab9 4px solid;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #025ab9;
+}
+

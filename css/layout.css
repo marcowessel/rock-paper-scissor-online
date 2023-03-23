@@ -1,0 +1,204 @@
+:root {
+    /*CSS variables*/
+    --top-bar-height: 50px;
+    --top-bar-gradient: linear-gradient(180deg, rgba(69,69,69,1) 0%, rgba(20,20,20,1) 100%);
+    --top-bar-gradient-hover: linear-gradient(180deg, rgba(89,89,89,1) 0%, rgba(36,36,36,1) 100%);
+
+    --spacing-left-right: 10%;
+    --spacing-top-bottom: 100px;
+}
+
+/*------------------------------------*\
+# GENERAL
+\*------------------------------------*/
+
+*{
+
+}
+
+h1{
+    font-size: 3rem;
+    padding-bottom: 15px;
+}
+
+html{
+    height:100%;
+    margin:0;
+}
+
+body{
+    overflow: auto;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    margin:0;
+}
+
+a {
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*------------------------------------*\
+# HEADER
+\*------------------------------------*/
+
+#top-bar {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    background: var(--top-bar-gradient);
+    height: var(--top-bar-height);
+    box-shadow: 0px 5px 14px 0px rgba(0,0,0,0.4);
+}
+
+#top-home {
+
+}
+
+#top-home-button {
+    display: flex;
+    width: var(--top-bar-height);
+    height: var(--top-bar-height);
+    text-align: center;
+    font-size: 1.2em;
+    border-right: black 1px solid;
+}
+
+#top-home-button:hover {
+    background: var(--top-bar-gradient-hover)
+}
+
+#top-titel {
+    justify-self: center;
+    color: white;
+}
+
+#top-home-button-icon {
+    margin: auto;
+    color: white;
+}
+
+/* loggedin */
+#top-user {
+    justify-self: end;
+}
+
+#top-user-name {
+    color: white;
+    margin: auto 0px;
+}
+
+#top-user-icon{
+    color: white;
+    margin: auto 0px;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+/* loginRegistration */
+#top-user-loginRegistration {
+    display: flex;
+    padding: 0px 20px;
+    height: var(--top-bar-height);
+    border-left: black solid 1px;
+}
+
+#top-user-loginRegistration:hover {
+    background: var(--top-bar-gradient-hover);
+}
+
+#top-user-loginRegistration-text {
+    color: white;
+    margin: auto;
+}
+
+/*------------------------------------*\
+# DROPDOWN
+\*------------------------------------*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-left: solid 1px black;
+    min-width: 175px;
+}
+
+/* Style The Dropdown Button */
+.dropbutton {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 175px;
+    padding: 0px 20px;
+    height: var(--top-bar-height);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(69,69,69,1) 0%, rgba(20,20,20,1) 100%);
+    transition: 0.3s;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    text-align: right;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    margin-right: -5px;
+    transition: 0.3s;
+}
+
+/* dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #e2e2e2;
+    margin-right: 0px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbutton{
+    background: var(--top-bar-gradient-hover);
+}
+
+#logout-link{
+    font-weight: normal;
+    border-top: 1px solid #e1e1e1;
+}
+
+/*------------------------------------*\
+# FOOTER
+\*------------------------------------*/
+
+footer {
+    text-align: center;
+    color: #b3b3b3;
+    margin-top: auto;
+    background-color: #141414;
+    font-size: 0.8em;
+}
+
